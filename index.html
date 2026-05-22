@@ -104,14 +104,13 @@
     display: grid; grid-template-columns: auto 1fr auto;
     gap: 40px; align-items: center;
   }
-  .logo { display: flex; align-items: center; gap: 14px; }
+  .logo { display: flex; align-items: center; gap: 12px; }
   .logo-mark {
-    width: 64px; height: 64px; border-radius: 50%;
-    background: var(--ink);
-    display: grid; place-items: center; overflow: hidden;
-    box-shadow: 0 0 0 2px var(--gold), 0 6px 18px rgba(45, 53, 18, 0.25);
+    width: 72px; height: 72px;
+    display: grid; place-items: center;
+    flex-shrink: 0;
   }
-  .logo-mark img { width: 100%; height: 100%; object-fit: cover; }
+  .logo-mark img { width: 100%; height: 100%; object-fit: contain; }
   .logo-mark svg { width: 32px; height: 32px; }
   .logo-text { display: flex; flex-direction: column; line-height: 1; }
   .logo-text .brand {
@@ -615,7 +614,7 @@
     display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 40px;
     border-bottom: 1px solid rgba(242, 233, 214, 0.15);
   }
-  .footer-brand .logo-mark { background: var(--ink); box-shadow: 0 0 0 2px var(--gold), 0 6px 18px rgba(0,0,0,0.4); }
+  .footer-brand .logo-mark { background: transparent; box-shadow: none; }
   .footer-brand .brand { color: var(--sand-light) !important; }
   .footer-brand p {
     font-size: 13px; opacity: 0.78; margin: 18px 0;
@@ -886,7 +885,7 @@
   <div class="header-inner">
     <a href="#" class="logo">
       <div class="logo-mark">
-        <img src="/images/logo.jpg" alt="Natural Ground Organics logo">
+        <img src="/images/logo-transparent.png" alt="Natural Ground Organics logo">
       </div>
       <div class="logo-text">
         <span class="brand">Natural Ground Organics</span>
@@ -975,7 +974,7 @@
       </div>
       <div class="hero-visual">
         <!-- Hero photograph: closeup of mitragyna speciosa (kratom) leaves -->
-        <img class="photo" src="/images/hero-botanical.jpg" alt="Closeup of dark green kratom leaves on a Mitragyna speciosa tree">
+        <img class="photo" src="/images/hero-kratom.jpg" alt="Closeup of dark green kratom leaves on a Mitragyna speciosa tree">
       </div>
       <div class="hero-dots">
         <span class="active"></span><span></span><span></span>
@@ -1424,7 +1423,7 @@
     <div class="footer-brand">
       <div class="logo">
         <div class="logo-mark">
-          <img src="/images/logo.jpg" alt="Natural Ground Organics logo">
+          <img src="/images/logo-transparent.png" alt="Natural Ground Organics logo">
         </div>
         <div class="logo-text">
           <span class="brand" style="color: var(--sand-light);">Natural Ground Organics</span>
