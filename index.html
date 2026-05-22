@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natural Ground Organics — Mockingbird Kratom & Luau Kava Co</title>
+<meta name="description" content="Premium kratom strains and kava from Natural Ground Organics. Mockingbird Kratom in 100g–1kg sizes and Luau Kava Co 55g pouches. Ethically sourced, naturally grown.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Palette pulled from the Natural Ground Organics logo
+       (deep olive tree, golden sun, coconut brown, cream/parchment) */
+    --clay: #927426;          /* logo brass / hills olive */
+    --clay-dark: #6F5818;
+    --terracotta: #C28A3A;    /* warmed sun-gold accent */
+    --sand: #F0E2B0;          /* warm wheat */
+    --sand-light: #F8EDC8;    /* lighter cream */
+    --cream: #FEF8E2;         /* logo parchment background */
+    --paper: #FFFCEF;
+    --sage: #97923F;          /* yellow-olive from logo */
+    --sage-dark: #7C6D31;
+    --forest: #55581D;        /* deep olive of tree foliage */
+    --forest-deep: #2D3512;   /* darkest tree shadow */
+    --moss: #6E7424;
+    --bark: #463513;          /* coconut shell / lettering brown */
+    --ink: #2A220D;           /* deep earth ink */
+    --muted: #8B7A48;
+    --rule: #DCC894;          /* warm beige border */
+    --accent-red: #B8732E;    /* warmed terracotta */
+    --leaf: #6B7F22;
+    --gold: #C7AD52;          /* logo gold */
+    --gold-bright: #F3B731;   /* sun core */
+
+    /* strain-specific powder tones */
+    --white-powder: #EAE0C4;
+    --white-powder-dark: #C9B98E;
+    --red-powder: #B85C3E;
+    --red-powder-dark: #7E3A22;
+    --green-powder: #6D8348;
+    --green-powder-dark: #44542C;
+    --kava-powder: #B89066;
+    --kava-powder-dark: #7E5A38;
+
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.5;
+    font-size: 15px;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.17 0 0 0 0 0.14 0 0 0 0 0.1 0 0 0 0.05 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    pointer-events: none;
+    opacity: 0.3;
+    mix-blend-mode: multiply;
+    z-index: 9999;
+  }
+  a { color: inherit; text-decoration: none; }
+  img, svg { max-width: 100%; display: block; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+  /* Top bars */
+  .warning-bar {
+    background: var(--forest-deep); color: var(--sand-light);
+    padding: 10px 20px; text-align: center;
+    font-size: 12px; letter-spacing: 0.04em; font-weight: 500;
+  }
+  .warning-bar strong { color: var(--terracotta); font-weight: 700; }
+  .warning-bar a { text-decoration: underline; color: var(--sand); }
+
+  .utility-bar { background: var(--bark); color: var(--sand-light); font-size: 12px; padding: 8px 0; }
+  .utility-inner {
+    max-width: 1340px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  }
+  .utility-left { display: flex; gap: 18px; }
+  .utility-left span { opacity: 0.8; }
+  .utility-right { display: flex; gap: 22px; align-items: center; }
+  .utility-right a { display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+  .utility-right a:hover { color: var(--terracotta); }
+  .utility-right svg { width: 14px; height: 14px; }
+
+  /* Header */
+  header.main-header {
+    background: rgba(255, 254, 248, 0.96);
+    border-bottom: 1px solid var(--rule);
+    position: sticky; top: 0; z-index: 100;
+    backdrop-filter: blur(8px);
+  }
+  .header-inner {
+    max-width: 1340px; margin: 0 auto; padding: 18px 24px;
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 40px; align-items: center;
+  }
+  .logo { display: flex; align-items: center; gap: 14px; }
+  .logo-mark {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: var(--ink);
+    display: grid; place-items: center; overflow: hidden;
+    box-shadow: 0 0 0 2px var(--gold), 0 6px 18px rgba(45, 53, 18, 0.25);
+  }
+  .logo-mark img { width: 100%; height: 100%; object-fit: cover; }
+  .logo-mark svg { width: 32px; height: 32px; }
+  .logo-text { display: flex; flex-direction: column; line-height: 1; }
+  .logo-text .brand {
+    font-family: var(--font-display); font-weight: 700; font-size: 22px;
+    letter-spacing: -0.01em; color: var(--forest-deep); font-style: italic;
+  }
+  .logo-text .tagline {
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--muted); margin-top: 4px; font-weight: 500;
+  }
+
+  .search-wrap { position: relative; max-width: 600px; width: 100%; justify-self: center; }
+  .search-wrap input {
+    width: 100%; padding: 13px 50px 13px 20px;
+    border: 1.5px solid var(--rule); border-radius: 999px;
+    background: var(--paper); font-family: inherit; font-size: 14px;
+    color: var(--ink); transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .search-wrap input::placeholder { color: var(--muted); font-style: italic; }
+  .search-wrap input:focus {
+    outline: none; border-color: var(--sage);
+    box-shadow: 0 0 0 4px rgba(149, 160, 121, 0.15);
+  }
+  .search-wrap button {
+    position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+    width: 38px; height: 38px; border-radius: 50%;
+    background: var(--forest); color: var(--paper);
+    display: grid; place-items: center; transition: background 0.2s;
+  }
+  .search-wrap button:hover { background: var(--forest-deep); }
+  .search-wrap svg { width: 16px; height: 16px; }
+
+  .header-actions { display: flex; gap: 8px; align-items: center; }
+  .header-action {
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    padding: 8px 14px; border-radius: 12px; color: var(--bark);
+    transition: background 0.2s, color 0.2s;
+    font-size: 11px; font-weight: 500; letter-spacing: 0.05em;
+    text-transform: uppercase; position: relative;
+  }
+  .header-action:hover { background: var(--sand); color: var(--forest-deep); }
+  .header-action svg { width: 22px; height: 22px; }
+  .cart-badge {
+    position: absolute; top: 4px; right: 8px; width: 18px; height: 18px;
+    background: var(--accent-red); color: white; border-radius: 50%;
+    font-size: 10px; display: grid; place-items: center; font-weight: 700;
+  }
+
+  /* Nav */
+  nav.main-nav {
+    background: var(--forest); color: var(--sand-light);
+    border-bottom: 1px solid var(--forest-deep);
+  }
+  .nav-inner {
+    max-width: 1340px; margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; gap: 4px;
+  }
+  .nav-inner > a {
+    padding: 14px 18px; font-size: 13px; font-weight: 500;
+    letter-spacing: 0.06em; text-transform: uppercase; color: var(--sand);
+    transition: background 0.2s, color 0.2s;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .nav-inner > a:hover { background: var(--forest-deep); color: var(--paper); }
+  .nav-inner > a.featured { color: var(--terracotta); font-weight: 700; }
+  .nav-inner .nav-divider { flex: 1; }
+  .nav-inner .deal-link {
+    background: var(--accent-red); color: white;
+    padding: 14px 22px; font-weight: 600;
+  }
+  .nav-inner .deal-link:hover { background: var(--clay-dark); color: white; }
+  .nav-inner svg.chev { width: 10px; height: 10px; opacity: 0.6; }
+
+  /* Layout */
+  .page {
+    max-width: 1340px; margin: 0 auto; padding: 28px 24px;
+    display: grid; grid-template-columns: 240px 1fr; gap: 32px;
+  }
+
+  aside.sidebar { align-self: start; position: sticky; top: 110px; }
+  .sidebar h3 {
+    font-family: var(--font-display); font-weight: 600; font-size: 18px;
+    color: var(--forest-deep); padding: 0 0 12px;
+    border-bottom: 1.5px solid var(--clay); margin-bottom: 4px;
+    letter-spacing: -0.01em;
+  }
+  .sidebar ul {
+    list-style: none; border: 1px solid var(--rule); border-top: none;
+    background: var(--paper); border-radius: 0 0 10px 10px; overflow: hidden;
+  }
+  .sidebar li a {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 11px 16px; font-size: 13px; color: var(--bark);
+    border-bottom: 1px dotted var(--rule);
+    transition: background 0.15s, color 0.15s, padding-left 0.2s;
+    font-weight: 500;
+  }
+  .sidebar li:last-child a { border-bottom: none; }
+  .sidebar li a:hover { background: var(--sand-light); color: var(--forest-deep); padding-left: 22px; }
+  .sidebar li a .count { color: var(--muted); font-size: 11px; font-weight: 400; }
+  .sidebar li.has-sub a::after { content: '+'; color: var(--clay); font-weight: 600; margin-left: 8px; }
+
+  .sidebar-promo {
+    margin-top: 24px; background: var(--forest); color: var(--cream);
+    padding: 22px; border-radius: 14px; position: relative; overflow: hidden;
+  }
+  .sidebar-promo::before {
+    content: ''; position: absolute; top: -30px; right: -30px;
+    width: 120px; height: 120px;
+    background: radial-gradient(circle, var(--terracotta), transparent 70%);
+    opacity: 0.4;
+  }
+  .sidebar-promo h4 {
+    font-family: var(--font-display); font-size: 17px; font-weight: 600;
+    margin-bottom: 6px; position: relative;
+  }
+  .sidebar-promo p { font-size: 12px; opacity: 0.85; margin-bottom: 14px; position: relative; }
+  .sidebar-promo a {
+    display: inline-block; background: var(--terracotta); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em; position: relative;
+  }
+
+  main { min-width: 0; }
+
+  /* HERO with embedded SVG botanical illustration */
+  .hero {
+    position: relative; border-radius: 18px; overflow: hidden;
+    min-height: 460px;
+    display: grid; grid-template-columns: 1.05fr 1fr;
+    align-items: stretch;
+    box-shadow: 0 30px 60px -30px rgba(74, 87, 64, 0.35);
+    margin-bottom: 36px;
+    background: var(--forest-deep);
+  }
+  .hero-content {
+    padding: 60px 50px; color: var(--cream); position: relative; z-index: 2;
+    display: flex; flex-direction: column; justify-content: center;
+    background: linear-gradient(135deg, var(--forest) 0%, var(--sage-dark) 100%);
+  }
+  .hero-kicker {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; background: rgba(242, 233, 214, 0.15);
+    border: 1px solid rgba(242, 233, 214, 0.3); border-radius: 999px;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--sand); margin-bottom: 20px; font-weight: 500; align-self: flex-start;
+  }
+  .hero-kicker::before { content: '✦'; color: var(--terracotta); }
+  .hero h1 {
+    font-family: var(--font-display); font-weight: 600; font-style: italic;
+    font-size: clamp(38px, 5vw, 58px); line-height: 0.98;
+    letter-spacing: -0.02em; margin-bottom: 18px; color: var(--sand-light);
+  }
+  .hero h1 em { color: var(--terracotta); font-style: normal; font-weight: 500; }
+  .hero p { font-size: 16px; line-height: 1.55; opacity: 0.88; max-width: 460px; margin-bottom: 28px; }
+  .hero-cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 13px 24px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+    transition: transform 0.15s, background 0.2s, color 0.2s;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--terracotta); color: white; }
+  .btn-primary:hover { background: var(--clay-dark); }
+  .btn-ghost {
+    background: transparent; color: var(--sand);
+    border: 1.5px solid rgba(242, 233, 214, 0.4);
+  }
+  .btn-ghost:hover { background: rgba(242, 233, 214, 0.1); border-color: var(--sand); }
+
+  .hero-visual {
+    position: relative; overflow: hidden; min-height: 460px;
+    background: linear-gradient(135deg, #6B7A4F 0%, #354029 50%, #2A331F 100%);
+  }
+  .hero-visual svg, .hero-visual img.photo { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .hero-visual img.photo { object-fit: cover; }
+  img.photo { display: block; }
+  img.tile-bg-svg { object-fit: cover; }
+  img.product-illust { object-fit: cover; }
+  img.lifestyle-bg { object-fit: cover; }
+  .tea-image img.photo { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+
+  .hero-dots {
+    position: absolute; bottom: 24px; left: 50px;
+    display: flex; gap: 8px; z-index: 3;
+  }
+  .hero-dots span {
+    width: 28px; height: 4px;
+    background: rgba(242, 233, 214, 0.3); border-radius: 2px;
+  }
+  .hero-dots span.active { background: var(--terracotta); }
+
+  /* Brand category tiles */
+  .brand-tiles {
+    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; margin-bottom: 40px;
+  }
+  .tile {
+    border-radius: 16px; overflow: hidden; position: relative;
+    min-height: 240px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 26px; color: white;
+    transition: transform 0.3s, box-shadow 0.3s; isolation: isolate;
+  }
+  .tile:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -20px rgba(0,0,0,0.3); }
+  .tile-bg-svg {
+    position: absolute; inset: 0; z-index: -2;
+    width: 100%; height: 100%;
+  }
+  .tile::before {
+    content: ''; position: absolute; inset: 0; z-index: -1;
+  }
+  .tile.kratom { background: linear-gradient(135deg, #44542C, #5B7A44 50%, #768760); }
+  .tile.kratom::before {
+    background: linear-gradient(160deg, rgba(53,64,41,0.55) 0%, rgba(74,87,64,0.3) 60%, rgba(103,117,82,0.5) 100%);
+  }
+  .tile.kava { background: linear-gradient(135deg, #7A573D, #A07254 60%, #D08B6B); }
+  .tile.kava::before {
+    background: linear-gradient(160deg, rgba(122,87,61,0.55) 0%, rgba(160,114,84,0.3) 70%, rgba(208,139,107,0.35) 100%);
+  }
+  .tile.tea { background: linear-gradient(135deg, #5A4836, #7A573D 60%, #A07254); }
+  .tile.tea::before {
+    background: linear-gradient(160deg, rgba(90,72,54,0.65) 0%, rgba(122,87,61,0.4) 60%, rgba(160,114,84,0.4) 100%);
+  }
+  .tile .kicker {
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    opacity: 0.9; margin-bottom: 8px; font-weight: 500;
+  }
+  .tile h2 {
+    font-family: var(--font-display); font-weight: 600; font-style: italic;
+    font-size: 30px; line-height: 1; letter-spacing: -0.01em; margin-bottom: 6px;
+  }
+  .tile.kratom h2 { font-size: 38px; }
+  .tile .meta { font-size: 13px; opacity: 0.9; margin-bottom: 14px; }
+  .tile .tile-link {
+    align-self: flex-start; font-size: 11px; letter-spacing: 0.12em;
+    text-transform: uppercase; font-weight: 600;
+    border-bottom: 1.5px solid currentColor; padding-bottom: 2px;
+  }
+  .tile.tea .coming-soon {
+    position: absolute; top: 16px; right: 16px;
+    background: rgba(0,0,0,0.4); color: white;
+    padding: 4px 10px; border-radius: 999px;
+    font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+    font-weight: 600; backdrop-filter: blur(6px); z-index: 2;
+  }
+
+  /* Section heading */
+  .section-head {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin: 50px 0 24px; padding-bottom: 14px;
+    border-bottom: 1.5px solid var(--rule); gap: 20px;
+  }
+  .section-head .heading-text { flex: 1; }
+  .section-head h2 {
+    font-family: var(--font-display); font-weight: 600; font-style: italic;
+    font-size: 34px; color: var(--forest-deep); line-height: 1; letter-spacing: -0.01em;
+  }
+  .section-head .sub { font-size: 13px; color: var(--muted); margin-top: 6px; }
+  .section-head .view-all {
+    font-size: 12px; color: var(--clay); font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    display: flex; align-items: center; gap: 4px;
+    border-bottom: 1px solid currentColor; padding-bottom: 4px;
+  }
+  .section-head .view-all:hover { color: var(--forest-deep); }
+
+  /* Product grid */
+  .product-tabs {
+    display: flex; gap: 28px; border-bottom: 1px solid var(--rule); margin-bottom: 24px;
+  }
+  .product-tabs button {
+    padding: 10px 0; font-size: 12px; letter-spacing: 0.12em;
+    text-transform: uppercase; font-weight: 600; color: var(--muted);
+    border-bottom: 2px solid transparent; margin-bottom: -1px;
+  }
+  .product-tabs button.active { color: var(--forest-deep); border-bottom-color: var(--clay); }
+
+  .grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+  }
+  .card {
+    background: var(--paper); border: 1px solid var(--rule);
+    border-radius: 16px; overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    position: relative;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px -18px rgba(74, 87, 64, 0.25);
+    border-color: var(--clay);
+  }
+  .card .img-wrap {
+    aspect-ratio: 1 / 1;
+    position: relative; overflow: hidden;
+  }
+  .card .img-wrap svg.product-illust {
+    width: 100%; height: 100%;
+    transition: transform 0.4s;
+  }
+  .card:hover .img-wrap svg.product-illust { transform: scale(1.04); }
+
+  .card .badge {
+    position: absolute; top: 12px; left: 12px;
+    background: var(--forest); color: var(--cream);
+    padding: 4px 10px; border-radius: 999px;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    font-weight: 600; z-index: 2;
+  }
+  .card .badge.red { background: var(--accent-red); }
+  .card .badge.terracotta { background: var(--terracotta); }
+
+  .strain-ribbon {
+    position: absolute; bottom: 12px; left: 12px; right: 12px;
+    background: rgba(53, 64, 41, 0.88); backdrop-filter: blur(8px);
+    color: var(--sand-light); padding: 8px 14px; border-radius: 8px;
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 2; font-size: 11px; letter-spacing: 0.08em;
+    text-transform: uppercase; font-weight: 500;
+  }
+  .strain-ribbon .vein-dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--sage);
+  }
+  .card.white .strain-ribbon .vein-dot { background: #F5EBD2; box-shadow: 0 0 0 2px rgba(245,235,210,0.3); }
+  .card.red .strain-ribbon .vein-dot { background: var(--accent-red); box-shadow: 0 0 0 2px rgba(168,81,56,0.3); }
+  .card.green .strain-ribbon .vein-dot { background: var(--moss); box-shadow: 0 0 0 2px rgba(118,135,96,0.3); }
+
+  .card-body { padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 4px; }
+  .card-brand {
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--clay); font-weight: 600;
+  }
+  .card-name {
+    font-family: var(--font-display); font-size: 18px; font-weight: 600;
+    color: var(--forest-deep); line-height: 1.2; letter-spacing: -0.01em;
+    margin: 2px 0 8px;
+  }
+  .card-sizes { font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+  .card-desc {
+    font-size: 13px; line-height: 1.5; color: #4a4a4a;
+    margin: 0 0 12px; font-family: var(--font-body, inherit);
+  }
+  .card-desc .desc-short { display: block; }
+  .card-desc .desc-full { display: none; margin-top: 6px; color: #555; }
+  .card-desc.is-open .desc-full { display: block; }
+  .card-desc .desc-toggle {
+    background: none; border: 0; padding: 4px 0 0;
+    color: var(--clay); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    cursor: pointer; display: inline-flex; align-items: center; gap: 4px;
+  }
+  .card-desc .desc-toggle:hover { color: var(--forest-deep); }
+  .card-desc .desc-toggle .chev { transition: transform 0.2s ease; display: inline-block; }
+  .card-desc.is-open .desc-toggle .chev { transform: rotate(180deg); }
+  .card-footer {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: auto; padding-top: 8px; border-top: 1px dotted var(--rule);
+  }
+  .card-price {
+    font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--forest-deep);
+  }
+  .card-price .from {
+    font-size: 10px; color: var(--muted); font-weight: 400;
+    text-transform: uppercase; letter-spacing: 0.1em; margin-right: 4px;
+  }
+  .add-btn {
+    background: var(--forest); color: var(--cream);
+    width: 34px; height: 34px; border-radius: 50%;
+    display: grid; place-items: center;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .add-btn:hover { background: var(--terracotta); transform: rotate(90deg); }
+  .add-btn svg { width: 14px; height: 14px; }
+
+  /* Feature strip */
+  .feature-strip {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    margin: 60px 0 40px;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    background: var(--sand-light); border-radius: 14px;
+  }
+  .feature {
+    padding: 26px 20px; text-align: center;
+    border-right: 1px solid var(--rule);
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+  }
+  .feature:last-child { border-right: none; }
+  .feature-icon {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--paper); display: grid; place-items: center;
+    color: var(--forest); border: 1px solid var(--rule);
+  }
+  .feature-icon svg { width: 22px; height: 22px; }
+  .feature h4 {
+    font-family: var(--font-display); font-size: 15px; font-weight: 600; color: var(--forest-deep);
+  }
+  .feature p { font-size: 12px; color: var(--muted); }
+
+  /* Kava feature row */
+  .kava-feature { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  .kava-feature .lifestyle-card {
+    border-radius: 16px; overflow: hidden; position: relative;
+    min-height: 380px; color: white;
+    display: flex; flex-direction: column; justify-content: flex-end; padding: 30px;
+    background: linear-gradient(135deg, #2D5167, #4A7693 60%, #D08B6B);
+  }
+  .kava-feature .lifestyle-card .lifestyle-bg {
+    position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2;
+  }
+  .kava-feature .lifestyle-card::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(0deg, rgba(45,81,103,0.7), rgba(45,81,103,0.05) 70%);
+    z-index: -1;
+  }
+  .kava-feature .lifestyle-card h3 {
+    font-family: var(--font-display); font-style: italic; font-size: 26px;
+    font-weight: 600; margin-bottom: 8px;
+  }
+  .kava-feature .lifestyle-card p {
+    font-size: 13px; opacity: 0.95; margin-bottom: 14px; max-width: 360px; line-height: 1.55;
+  }
+
+  /* Wholesale */
+  .wholesale-banner {
+    margin: 50px 0;
+    background: linear-gradient(100deg, var(--bark), var(--clay-dark));
+    border-radius: 18px; padding: 44px 50px; color: var(--cream);
+    display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px;
+    align-items: center; position: relative; overflow: hidden;
+  }
+  .wholesale-banner::before {
+    content: ''; position: absolute; right: -100px; top: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(208, 139, 107, 0.25), transparent 60%);
+    pointer-events: none;
+  }
+  .wholesale-banner h2 {
+    font-family: var(--font-display); font-style: italic; font-weight: 600;
+    font-size: 36px; line-height: 1.05; margin-bottom: 12px; color: var(--sand-light);
+  }
+  .wholesale-banner p { font-size: 14px; opacity: 0.88; margin-bottom: 22px; max-width: 480px; }
+  .wholesale-banner .wholesale-contact { display: flex; gap: 10px; flex-wrap: wrap; }
+  .wholesale-future {
+    background: rgba(0,0,0,0.2);
+    border: 1px dashed rgba(242, 233, 214, 0.3);
+    border-radius: 12px; padding: 22px;
+    font-size: 13px; line-height: 1.6; position: relative;
+  }
+  .wholesale-future .pill {
+    display: inline-block; background: var(--terracotta); color: white;
+    padding: 3px 10px; border-radius: 999px;
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    font-weight: 600; margin-bottom: 10px;
+  }
+  .wholesale-future h4 {
+    font-family: var(--font-display); font-size: 17px; font-weight: 600;
+    color: var(--sand-light); margin-bottom: 6px;
+  }
+
+  /* Tea banner */
+  .tea-banner {
+    background: linear-gradient(135deg, var(--bark), var(--clay-dark));
+    border-radius: 18px; padding: 0; color: var(--cream);
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+    align-items: stretch; overflow: hidden; position: relative;
+  }
+  .tea-text { padding: 50px 40px; z-index: 2; }
+  .tea-pill {
+    display: inline-block; background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(242,233,214,0.25);
+    padding: 5px 14px; border-radius: 999px;
+    font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 18px;
+  }
+  .tea-text h2 {
+    font-family: var(--font-display); font-style: italic;
+    font-size: 34px; margin-bottom: 12px; line-height: 1.05;
+  }
+  .tea-text p { opacity: 0.85; font-size: 14px; margin-bottom: 22px; max-width: 420px; }
+  .tea-form { display: flex; gap: 8px; max-width: 420px; }
+  .tea-form input {
+    flex: 1; padding: 13px 18px; border-radius: 999px;
+    border: 1px solid rgba(242,233,214,0.35);
+    background: rgba(0,0,0,0.2); color: var(--cream);
+    font-family: inherit; font-size: 13px;
+  }
+  .tea-form input:focus { outline: none; border-color: var(--terracotta); }
+  .tea-image {
+    position: relative; min-height: 380px; overflow: hidden;
+    background: linear-gradient(135deg, #5A4836, #A07254);
+  }
+  .tea-image svg { width: 100%; height: 100%; }
+
+  /* Footer */
+  footer {
+    background: var(--forest-deep); color: var(--sand);
+    margin-top: 60px; padding: 60px 0 0;
+  }
+  .footer-top {
+    max-width: 1340px; margin: 0 auto; padding: 0 24px 40px;
+    display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 40px;
+    border-bottom: 1px solid rgba(242, 233, 214, 0.15);
+  }
+  .footer-brand .logo-mark { background: var(--ink); box-shadow: 0 0 0 2px var(--gold), 0 6px 18px rgba(0,0,0,0.4); }
+  .footer-brand .brand { color: var(--sand-light) !important; }
+  .footer-brand p {
+    font-size: 13px; opacity: 0.78; margin: 18px 0;
+    max-width: 320px; line-height: 1.6;
+  }
+  .footer-brand .socials { display: flex; gap: 10px; margin-top: 14px; }
+  .footer-brand .socials a {
+    width: 36px; height: 36px; border-radius: 50%;
+    border: 1px solid rgba(242, 233, 214, 0.25);
+    display: grid; place-items: center;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .footer-brand .socials a:hover { background: var(--terracotta); border-color: var(--terracotta); }
+  .footer-brand .socials svg { width: 16px; height: 16px; }
+
+  footer h5 {
+    font-family: var(--font-display); font-size: 14px; font-weight: 600;
+    color: var(--terracotta); margin-bottom: 16px;
+    letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  footer ul { list-style: none; }
+  footer li { margin-bottom: 9px; }
+  footer li a { font-size: 13px; opacity: 0.78; transition: opacity 0.2s, color 0.2s; }
+  footer li a:hover { opacity: 1; color: var(--terracotta); }
+
+  .footer-bottom {
+    max-width: 1340px; margin: 0 auto; padding: 24px;
+    font-size: 11px; line-height: 1.7; opacity: 0.7;
+  }
+  .footer-bottom strong { color: var(--terracotta); }
+  .footer-copy {
+    border-top: 1px solid rgba(242, 233, 214, 0.15);
+    padding: 18px 24px; text-align: center;
+    font-size: 11px; opacity: 0.55; letter-spacing: 0.06em;
+  }
+
+  @media (max-width: 1100px) {
+    .page { grid-template-columns: 1fr; }
+    aside.sidebar { position: static; }
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-visual { min-height: 280px; }
+    .grid { grid-template-columns: repeat(3, 1fr); }
+    .brand-tiles { grid-template-columns: 1fr 1fr; }
+    .brand-tiles .tile.kratom { grid-column: span 2; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .kava-feature { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 700px) {
+    .header-inner { grid-template-columns: 1fr; gap: 16px; }
+    .search-wrap { grid-row: 2; }
+    .header-actions { justify-self: center; }
+    .nav-inner { overflow-x: auto; flex-wrap: nowrap; }
+    .nav-inner > a { white-space: nowrap; }
+    .grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+    .brand-tiles { grid-template-columns: 1fr; }
+    .brand-tiles .tile.kratom { grid-column: auto; }
+    .wholesale-banner, .tea-banner { grid-template-columns: 1fr; }
+    .tea-image { min-height: 240px; }
+    .feature-strip { grid-template-columns: 1fr 1fr; }
+    .feature:nth-child(2) { border-right: none; }
+    .feature:nth-child(1), .feature:nth-child(2) { border-bottom: 1px solid var(--rule); }
+    .footer-top { grid-template-columns: 1fr; }
+    .hero-content { padding: 36px 28px; }
+    .utility-left { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Reusable SVG product illustration (defined once, used many times via <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Bowl of powder illustration -->
+    <symbol id="powder-bowl" viewBox="0 0 400 400">
+      <!-- soft background gradient -->
+      <defs>
+        <radialGradient id="bgGrad" cx="0.5" cy="0.4">
+          <stop offset="0%" stop-color="rgba(255,255,255,0.4)"/>
+          <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+        </radialGradient>
+      </defs>
+      <rect width="400" height="400" fill="currentColor" opacity="0.08"/>
+      <circle cx="200" cy="200" r="180" fill="url(#bgGrad)"/>
+
+      <!-- Decorative leaf 1 (back) -->
+      <g transform="translate(85,90) rotate(-30)" opacity="0.35">
+        <path d="M 0 -50 Q 35 -30 38 20 Q 20 50 -15 30 Q -35 0 -25 -25 Q -15 -45 0 -50 Z" fill="currentColor"/>
+        <path d="M 0 -50 L 5 35" stroke="rgba(0,0,0,0.3)" stroke-width="1.5" fill="none"/>
+      </g>
+
+      <!-- Decorative leaf 2 (back right) -->
+      <g transform="translate(310,80) rotate(40)" opacity="0.3">
+        <path d="M 0 -45 Q 30 -25 32 18 Q 18 45 -12 28 Q -30 0 -22 -22 Q -12 -40 0 -45 Z" fill="currentColor"/>
+        <path d="M 0 -45 L 4 30" stroke="rgba(0,0,0,0.3)" stroke-width="1.5" fill="none"/>
+      </g>
+
+      <!-- Bowl - main body -->
+      <ellipse cx="200" cy="285" rx="135" ry="30" fill="rgba(0,0,0,0.2)"/>
+      <path d="M 80 240
+               Q 80 320 200 330
+               Q 320 320 320 240
+               Z"
+            fill="#6B5239"/>
+      <!-- Bowl highlight -->
+      <path d="M 95 245
+               Q 100 295 200 308
+               Q 175 295 130 270
+               Q 105 255 95 245 Z" fill="rgba(255,255,255,0.1)"/>
+      <!-- Bowl rim -->
+      <ellipse cx="200" cy="240" rx="120" ry="22" fill="#3D2E1F"/>
+      <ellipse cx="200" cy="237" rx="118" ry="20" fill="#4A3A28"/>
+
+      <!-- Powder mound inside bowl -->
+      <ellipse cx="200" cy="232" rx="110" ry="18" fill="currentColor"/>
+      <path d="M 95 232
+               Q 130 200 165 215
+               Q 200 195 235 215
+               Q 275 200 305 232 Z"
+            fill="currentColor" opacity="0.85"/>
+      <!-- Powder texture spots -->
+      <circle cx="160" cy="218" r="2" fill="rgba(0,0,0,0.15)"/>
+      <circle cx="220" cy="212" r="1.5" fill="rgba(0,0,0,0.15)"/>
+      <circle cx="180" cy="225" r="2" fill="rgba(255,255,255,0.2)"/>
+      <circle cx="250" cy="222" r="1.5" fill="rgba(255,255,255,0.2)"/>
+      <circle cx="140" cy="226" r="1.5" fill="rgba(0,0,0,0.15)"/>
+
+      <!-- Wooden spoon -->
+      <g transform="translate(290,150) rotate(35)">
+        <rect x="-4" y="0" width="8" height="110" rx="3" fill="#8B6B47"/>
+        <rect x="-4" y="0" width="3" height="110" fill="#A07F58"/>
+        <ellipse cx="0" cy="-5" rx="20" ry="14" fill="#8B6B47"/>
+        <ellipse cx="0" cy="-7" rx="17" ry="11" fill="#6B4F2F"/>
+        <ellipse cx="0" cy="-8" rx="15" ry="9" fill="currentColor" opacity="0.9"/>
+      </g>
+
+      <!-- Scattered powder grains around bowl -->
+      <circle cx="60" cy="290" r="2" fill="currentColor" opacity="0.7"/>
+      <circle cx="75" cy="305" r="1.5" fill="currentColor" opacity="0.6"/>
+      <circle cx="345" cy="295" r="2" fill="currentColor" opacity="0.7"/>
+      <circle cx="335" cy="315" r="1.5" fill="currentColor" opacity="0.6"/>
+      <circle cx="50" cy="270" r="1" fill="currentColor" opacity="0.5"/>
+    </symbol>
+
+    <!-- Kratom leaf single -->
+    <symbol id="kratom-leaf" viewBox="0 0 400 400">
+      <rect width="400" height="400" fill="currentColor" opacity="0.06"/>
+      <!-- Large leaf -->
+      <g transform="translate(200,200)">
+        <!-- Stem -->
+        <path d="M -3 130 Q 0 100 0 60" stroke="#5A4030" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <!-- Main leaf body -->
+        <path d="M 0 60
+                 C -60 50, -110 -10, -90 -90
+                 C -60 -140, -20 -150, 0 -145
+                 C 20 -150, 60 -140, 90 -90
+                 C 110 -10, 60 50, 0 60 Z"
+              fill="currentColor"/>
+        <!-- Leaf highlight -->
+        <path d="M 0 50
+                 C -40 40, -85 -10, -75 -75
+                 C -55 -110, -25 -125, -5 -130 Z"
+              fill="rgba(255,255,255,0.15)"/>
+        <!-- Main vein -->
+        <path d="M 0 -145 L 0 55" stroke="rgba(0,0,0,0.35)" stroke-width="2" fill="none"/>
+        <!-- Side veins -->
+        <path d="M 0 -120 Q -25 -100 -55 -85" stroke="rgba(0,0,0,0.25)" stroke-width="1.5" fill="none"/>
+        <path d="M 0 -120 Q 25 -100 55 -85" stroke="rgba(0,0,0,0.25)" stroke-width="1.5" fill="none"/>
+        <path d="M 0 -80 Q -35 -65 -75 -55" stroke="rgba(0,0,0,0.25)" stroke-width="1.5" fill="none"/>
+        <path d="M 0 -80 Q 35 -65 75 -55" stroke="rgba(0,0,0,0.25)" stroke-width="1.5" fill="none"/>
+        <path d="M 0 -40 Q -35 -30 -75 -15" stroke="rgba(0,0,0,0.25)" stroke-width="1.5" fill="none"/>
+        <path d="M 0 -40 Q 35 -30 75 -15" stroke="rgba(0,0,0,0.25)" stroke-width="1.5" fill="none"/>
+        <path d="M 0 0 Q -30 10 -55 25" stroke="rgba(0,0,0,0.25)" stroke-width="1.5" fill="none"/>
+        <path d="M 0 0 Q 30 10 55 25" stroke="rgba(0,0,0,0.25)" stroke-width="1.5" fill="none"/>
+        <!-- Leaf edge serration accent -->
+        <path d="M 0 60 C -60 50, -110 -10, -90 -90 C -60 -140, -20 -150, 0 -145 C 20 -150, 60 -140, 90 -90 C 110 -10, 60 50, 0 60 Z"
+              fill="none" stroke="rgba(0,0,0,0.2)" stroke-width="1.5"/>
+      </g>
+      <!-- Small accent leaves -->
+      <g transform="translate(90,320) rotate(-40) scale(0.35)" opacity="0.5">
+        <path d="M 0 60 C -60 50, -110 -10, -90 -90 C -60 -140, -20 -150, 0 -145 C 20 -150, 60 -140, 90 -90 C 110 -10, 60 50, 0 60 Z" fill="currentColor"/>
+      </g>
+      <g transform="translate(320,330) rotate(50) scale(0.4)" opacity="0.5">
+        <path d="M 0 60 C -60 50, -110 -10, -90 -90 C -60 -140, -20 -150, 0 -145 C 20 -150, 60 -140, 90 -90 C 110 -10, 60 50, 0 60 Z" fill="currentColor"/>
+      </g>
+    </symbol>
+
+    <!-- Kava pouch / cup -->
+    <symbol id="kava-bowl" viewBox="0 0 400 400">
+      <rect width="400" height="400" fill="#B89066" opacity="0.1"/>
+
+      <!-- Tapa cloth pattern background -->
+      <g opacity="0.15">
+        <path d="M 0 80 Q 50 60 100 80 T 200 80 T 300 80 T 400 80" stroke="#7E5A38" stroke-width="2" fill="none"/>
+        <path d="M 0 110 Q 50 90 100 110 T 200 110 T 300 110 T 400 110" stroke="#7E5A38" stroke-width="1.5" fill="none"/>
+      </g>
+
+      <!-- Coconut shell bowl (traditional kava) -->
+      <ellipse cx="200" cy="290" rx="130" ry="25" fill="rgba(0,0,0,0.25)"/>
+      <!-- Bowl outer shell - coconut -->
+      <path d="M 75 220
+               Q 75 320 200 330
+               Q 325 320 325 220
+               Z" fill="#3D2A1A"/>
+      <!-- Bowl mid tone -->
+      <path d="M 85 225
+               Q 85 315 200 322
+               Q 315 315 315 225
+               Z" fill="#5A3F26"/>
+      <!-- Bowl highlight on left -->
+      <path d="M 90 235 Q 95 295 175 318 Q 130 295 100 250 Z" fill="rgba(255,255,255,0.08)"/>
+      <!-- Rim -->
+      <ellipse cx="200" cy="220" rx="125" ry="22" fill="#2A1A0D"/>
+      <ellipse cx="200" cy="218" rx="123" ry="20" fill="#3D2A1A"/>
+
+      <!-- Kava liquid inside -->
+      <ellipse cx="200" cy="215" rx="115" ry="17" fill="#8B6B47"/>
+      <ellipse cx="200" cy="213" rx="113" ry="16" fill="#A07F58"/>
+      <!-- Liquid surface ripples -->
+      <ellipse cx="175" cy="213" rx="40" ry="3" fill="rgba(255,255,255,0.2)"/>
+      <ellipse cx="245" cy="215" rx="25" ry="2" fill="rgba(255,255,255,0.15)"/>
+
+      <!-- Hibiscus flower decoration -->
+      <g transform="translate(95,140)">
+        <circle cx="0" cy="0" r="3" fill="#FFD56B"/>
+        <ellipse cx="-15" cy="-8" rx="14" ry="9" fill="#D8504A" transform="rotate(-30)" opacity="0.85"/>
+        <ellipse cx="15" cy="-8" rx="14" ry="9" fill="#D8504A" transform="rotate(30)" opacity="0.85"/>
+        <ellipse cx="0" cy="-18" rx="9" ry="14" fill="#D8504A" opacity="0.85"/>
+        <ellipse cx="-12" cy="8" rx="14" ry="9" fill="#D8504A" transform="rotate(30)" opacity="0.85"/>
+        <ellipse cx="12" cy="8" rx="14" ry="9" fill="#D8504A" transform="rotate(-30)" opacity="0.85"/>
+        <circle cx="0" cy="0" r="4" fill="#FFD56B"/>
+      </g>
+
+      <!-- Tropical leaf -->
+      <g transform="translate(310,160) rotate(25)">
+        <path d="M 0 -50 Q 25 -45 35 -25 L 35 25 Q 25 45 0 50 Q -10 25 -10 0 Q -10 -25 0 -50 Z" fill="#5B7A44"/>
+        <path d="M 0 -50 L 0 50" stroke="#3D4A2C" stroke-width="1.5"/>
+        <path d="M 0 -25 L 30 -20 M 0 0 L 32 5 M 0 25 L 28 30 M 0 -25 L -8 -20 M 0 0 L -8 5 M 0 25 L -7 30" stroke="#3D4A2C" stroke-width="1"/>
+      </g>
+    </symbol>
+
+  </defs>
+</svg>
+
+<!-- Top warning bar -->
+<div class="warning-bar">
+  <strong>⚠ AGE-RESTRICTED:</strong> Products intended for adults <strong>21+</strong>.
+  Not evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease.
+  Shipping restricted in some states — <a href="#">see policy</a>.
+</div>
+
+<!-- Utility bar -->
+<div class="utility-bar">
+  <div class="utility-inner">
+    <div class="utility-left">
+      <span>📍 Shipping from West Virginia, USA</span>
+      <span>🌱 Ethically sourced • Lab tested</span>
+    </div>
+    <div class="utility-right">
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg> Sign In / Register</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 21l4-4"/></svg> Track Order</a>
+      <a href="mailto:naturalgroundorganicswv@gmail.com">✉ Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Main header -->
+<header class="main-header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">
+        <img src="/images/logo.jpg" alt="Natural Ground Organics logo">
+      </div>
+      <div class="logo-text">
+        <span class="brand">Natural Ground Organics</span>
+        <span class="tagline">Rooted in Nature — West Virginia</span>
+      </div>
+    </a>
+
+    <div class="search-wrap">
+      <input type="search" placeholder="Search strains, sizes, kava…">
+      <button aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+    </div>
+
+    <div class="header-actions">
+      <a href="#" class="header-action">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        Wishlist
+      </a>
+      <a href="#" class="header-action">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        Cart
+        <span class="cart-badge">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Main nav -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <a href="#" class="featured">Shop All</a>
+    <a href="#kratom">Mockingbird Kratom <svg class="chev" viewBox="0 0 12 12" fill="currentColor"><path d="M6 9 L 1 4 L 11 4 Z"/></svg></a>
+    <a href="#kava">Luau Kava Co</a>
+    <a href="#tea">Tea <span style="opacity:0.5; font-size:10px; margin-left:4px;">SOON</span></a>
+    <a href="#wholesale">Wholesale</a>
+    <a href="#">Lab Reports</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <span class="nav-divider"></span>
+    <a href="#" class="deal-link">FREE SHIPPING OVER $75</a>
+  </div>
+</nav>
+
+<!-- Page body -->
+<div class="page">
+
+  <aside class="sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li class="has-sub"><a href="#kratom">Mockingbird Kratom <span class="count">13</span></a></li>
+      <li><a href="#">↳ White Strains <span class="count">5</span></a></li>
+      <li><a href="#">↳ Red Strains <span class="count">4</span></a></li>
+      <li><a href="#">↳ Green Strains <span class="count">4</span></a></li>
+      <li class="has-sub"><a href="#kava">Luau Kava Co <span class="count">1</span></a></li>
+      <li><a href="#tea">Tea (Coming Soon)</a></li>
+      <li><a href="#">By Size</a></li>
+      <li><a href="#">↳ 100g</a></li>
+      <li><a href="#">↳ 300g</a></li>
+      <li><a href="#">↳ 500g</a></li>
+      <li><a href="#">↳ Kilo (1000g)</a></li>
+      <li><a href="#wholesale">Wholesale Inquiry</a></li>
+      <li><a href="#">Bundles & Samplers</a></li>
+      <li><a href="#">Gift Cards</a></li>
+    </ul>
+
+    <div class="sidebar-promo">
+      <h4>New Customer?</h4>
+      <p>Get 15% off your first order with code <strong>WELCOME15</strong></p>
+      <a href="#">Shop Now →</a>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-kicker">Mountain-grown botanicals</div>
+        <h1>Naturally <em>grounded.</em><br>Ethically sourced.</h1>
+        <p>Small-batch kratom and authentic kava from Natural Ground Organics — a family-owned West Virginia shop bringing you the cleanest, most carefully selected leaf on the market.</p>
+        <div class="hero-cta-row">
+          <a href="#kratom" class="btn btn-primary">Shop Mockingbird Kratom →</a>
+          <a href="#kava" class="btn btn-ghost">Explore Luau Kava</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <!-- Hero photograph: closeup of mitragyna speciosa (kratom) leaves -->
+        <img class="photo" src="/images/hero-botanical.jpg" alt="Closeup of dark green kratom leaves on a Mitragyna speciosa tree">
+      </div>
+      <div class="hero-dots">
+        <span class="active"></span><span></span><span></span>
+      </div>
+    </section>
+
+    <!-- Brand tiles -->
+    <div class="brand-tiles">
+      <a href="#kratom" class="tile kratom">
+        <img class="tile-bg-svg" src="/images/tile-kratom.jpg" alt="Mockingbird Kratom">
+        <span class="kicker">Featured Brand</span>
+        <h2>Mockingbird Kratom</h2>
+        <div class="meta">13 strains • White, Red & Green • 100g – 1kg sizes</div>
+        <span class="tile-link">Shop the collection →</span>
+      </a>
+
+      <a href="#kava" class="tile kava">
+        <img class="tile-bg-svg" src="/images/tile-kava.jpg" alt="Luau Kava Co">
+        <span class="kicker">Tropical Calm</span>
+        <h2>Luau Kava Co</h2>
+        <div class="meta">Premium 55g pouches</div>
+        <span class="tile-link">Explore →</span>
+      </a>
+
+      <a href="#tea" class="tile tea">
+        <span class="coming-soon">Coming Soon</span>
+        <img class="tile-bg-svg" src="/images/tile-tea.jpg" alt="Tea collection coming soon">
+        <span class="kicker">Future Collection</span>
+        <h2>Tea</h2>
+        <div class="meta">Curated herbal & botanical blends</div>
+        <span class="tile-link">Get notified →</span>
+      </a>
+    </div>
+
+    <!-- Mockingbird Kratom Section -->
+    <div id="kratom" class="section-head">
+      <div class="heading-text">
+        <h2>Mockingbird Kratom</h2>
+        <div class="sub">Hand-selected strains across White, Red, and Green varieties — sold in 100g, 300g, 500g, and 1kg (kilo) sizes.</div>
+      </div>
+      <a href="#" class="view-all">View All Strains →</a>
+    </div>
+
+    <div class="product-tabs">
+      <button class="active">All Strains</button>
+      <button>White</button>
+      <button>Red</button>
+      <button>Green</button>
+      <button>Best Sellers</button>
+    </div>
+
+    <div class="grid">
+      <!-- WHITE STRAINS - using leaf illustrations with white powder tones -->
+      <div class="card white">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #F0E6CD, #D4C29E);">
+          <span class="badge terracotta">New</span>
+          <img class="product-illust" src="/images/white-1.jpg" alt="Super White Maeng Da">
+          <div class="strain-ribbon"><span class="vein-dot"></span> White Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">Super White Maeng Da</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">Premium-graded white vein with a crisp, citrus-bright aroma — finely milled for a smooth pour.</span>
+            <span class="desc-full">Hand-selected from mature Maeng Da leaves and stem-vein dried to preserve a light, lifting character. Traditionally enjoyed by enthusiasts who reach for a bright, motivating cup to start the morning. Subtle grassy notes with a clean, dry finish.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$24.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card white">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #EFE6CD, #D2BF98);">
+          <img class="product-illust" src="/images/white-2.jpg" alt="White Maeng Da">
+          <div class="strain-ribbon"><span class="vein-dot"></span> White Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">White Maeng Da</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">Our classic white vein — clean, herbaceous, and reliably uplifting in character.</span>
+            <span class="desc-full">Sun-dried Indonesian leaf milled to a fine, even powder. Long appreciated for an energizing, focused profile that pairs well with a busy morning routine. Brightly herbal aroma with a smooth, low-bitter finish.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$22.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card white">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #F2EAD4, #D4C29E);">
+          <img class="product-illust" src="/images/white-3.jpg" alt="White Lightning">
+          <div class="strain-ribbon"><span class="vein-dot"></span> White Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">White Lightning</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">House signature blend — bright, fast-pouring, and built for a quick uplift.</span>
+            <span class="desc-full">A proprietary blend of select white-vein lots, micro-milled for a silky texture. Crafted for enthusiasts who favor a brisk, alert character without the heavy earthiness of darker strains. Notes of green hay and dry citrus peel.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$22.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card white">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #F0E5CC, #D2BF98);">
+          <img class="product-illust" src="/images/white-4.jpg" alt="White Borneo">
+          <div class="strain-ribbon"><span class="vein-dot"></span> White Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">White Borneo</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">Mellow Bornean white — softer than Maeng Da, with a quietly clean lift.</span>
+            <span class="desc-full">Grown in the humid lowlands of Borneo and air-dried indoors to keep the powder pale and gentle on the palate. Favored by those who want the bright, focused character of a white vein without the sharper edge. Mild, hay-like aroma.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$22.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card white">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #F2EAD2, #D4C29E);">
+          <img class="product-illust" src="/images/white-5.jpg" alt="Super White Malay">
+          <div class="strain-ribbon"><span class="vein-dot"></span> White Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">Super White Malay</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">Premium Malaysian white — long-lasting, balanced, with a distinctive earthy-sweet aroma.</span>
+            <span class="desc-full">Slow-grown Malaysian leaf, hand-graded and finely milled in small lots. Known among long-time users for a steady, all-day character that bridges the bright lift of whites with the smoothness of greens. Faint cocoa and dry leaf notes.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$24.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RED STRAINS -->
+      <div class="card red">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #E5C9C0, #B85C3E);">
+          <span class="badge red">Best Seller</span>
+          <img class="product-illust" src="/images/red-1.jpg" alt="Super Red Maeng Da">
+          <div class="strain-ribbon"><span class="vein-dot"></span> Red Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">Super Red Maeng Da</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">Our top-shelf red vein — deeply aromatic, full-bodied, and made for unwinding.</span>
+            <span class="desc-full">Slow-dried mature red Maeng Da, finely milled for a rich, velvety pour. Traditionally a favorite at the end of a long day for its warm, settling character. Deep earthy aroma with notes of dried fig and roasted nut.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$24.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card red">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #E5C9C0, #B85C3E);">
+          <img class="product-illust" src="/images/red-2.jpg" alt="Red Maeng Da">
+          <div class="strain-ribbon"><span class="vein-dot"></span> Red Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">Red Maeng Da</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">The classic red — rich, mellow, and dependably comforting in profile.</span>
+            <span class="desc-full">Sun-dried Indonesian Maeng Da pressed through a fine sieve for a clean, even powder. Long appreciated by relaxation-leaning users for a warm, full-bodied character. Earthy and slightly sweet on the nose.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$22.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card red">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #E0C0B8, #B05538);">
+          <img class="product-illust" src="/images/red-3.jpg" alt="Red Bali">
+          <div class="strain-ribbon"><span class="vein-dot"></span> Red Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">Red Bali</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">Heritage Balinese red — broad-leaf, full-bodied, and famously smooth.</span>
+            <span class="desc-full">Pulled from mature Bali leaf and shade-dried to preserve a soft, rounded character. A traditional favorite that pairs well with quiet evenings and slow downtime. Notes of damp earth, vanilla, and dried tobacco leaf.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$22.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card red">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #E5C0B6, #A85138);">
+          <img class="product-illust" src="/images/red-4.jpg" alt="Red Dragon">
+          <div class="strain-ribbon"><span class="vein-dot"></span> Red Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">Red Dragon</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">A bold, full-bodied red with a distinctly deep aroma and a long, mellow finish.</span>
+            <span class="desc-full">A regional red lot known among enthusiasts for its rich, warming character. Sun-dried and stone-milled in small batches. Robust earthy nose with subtle spiced-cherry undertones — a favorite for a slower, settled evening.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$22.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- GREEN STRAINS -->
+      <div class="card green">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #DDE5C9, #6D8348);">
+          <span class="badge">Staff Pick</span>
+          <img class="product-illust" src="/images/green-1.jpg" alt="Super Green Maeng Da">
+          <div class="strain-ribbon"><span class="vein-dot"></span> Green Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">Super Green Maeng Da</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">Premium green Maeng Da — the balanced middle ground between bright whites and mellow reds.</span>
+            <span class="desc-full">Top-grade Indonesian green leaf, hand-graded and micro-milled. Long enjoyed for a smooth, even character that suits an afternoon lull. Verdant, fresh-cut aroma with a clean, lightly sweet finish.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$24.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card green">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #D8E5C5, #6B8045);">
+          <img class="product-illust" src="/images/green-2.jpg" alt="Green Maeng Da">
+          <div class="strain-ribbon"><span class="vein-dot"></span> Green Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">Green Maeng Da</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">Our classic green — versatile, balanced, and the most-reached-for daily strain.</span>
+            <span class="desc-full">Sun-dried Indonesian green-vein leaf milled to a fine, consistent powder. Often described by long-time users as the easiest go-to for a steady, even-keeled day. Grassy aroma with notes of green tea and dry leaf.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$22.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card green">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #D5E2C2, #5B7A44);">
+          <img class="product-illust" src="/images/green-3.jpg" alt="Green Hulk">
+          <div class="strain-ribbon"><span class="vein-dot"></span> Green Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">Green Hulk</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">A vibrant green blend — bright, herbaceous, and crafted for everyday balance.</span>
+            <span class="desc-full">A proprietary green-vein blend named for its lively character and standout color. Finely milled and small-batch sealed for freshness. Crisp, vegetal aroma with a clean dry-leaf finish.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$22.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card green">
+        <div class="img-wrap" style="background: linear-gradient(135deg, #DCE5C5, #677552);">
+          <img class="product-illust" src="/images/green-4.jpg" alt="Green Jong Kong">
+          <div class="strain-ribbon"><span class="vein-dot"></span> Green Vein</div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Mockingbird Kratom</div>
+          <div class="card-name">Green Jong Kong</div>
+          <div class="card-sizes">100g · 300g · 500g · 1kg</div>
+          <div class="card-desc">
+            <span class="desc-short">A rare regional green from Jong Kong — earthy, complex, and quietly distinctive.</span>
+            <span class="desc-full">Sourced from the Jong Kong region and shade-dried in small lots to preserve a deep, layered character. Favored by collectors who appreciate a less-common profile that sits between the brightness of a green and the body of a red. Earthy with faint cocoa undertones.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price"><span class="from">From</span>$22.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature strip -->
+    <div class="feature-strip">
+      <div class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 13a10 10 0 1 0 20 0M2 13l10-9 10 9"/><circle cx="12" cy="15" r="3"/></svg></div>
+        <h4>Lab Tested</h4>
+        <p>3rd-party verified purity</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="m2 13 10 5 10-5"/><path d="M16 7V3H8v4"/></svg></div>
+        <h4>Free Shipping $75+</h4>
+        <p>Discreet US delivery</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v8m-4-4 4 4 4-4m-9 10c0 2 3 4 5 4s5-2 5-4"/></svg></div>
+        <h4>Small Batch</h4>
+        <p>Ethically sourced leaf</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h4>Satisfaction</h4>
+        <p>30-day return policy</p>
+      </div>
+    </div>
+
+    <!-- Luau Kava Co -->
+    <div id="kava" class="section-head">
+      <div class="heading-text">
+        <h2>Luau Kava Co</h2>
+        <div class="sub">Authentic Pacific kava in premium 55g pouches — calm, traditional, smooth.</div>
+      </div>
+      <a href="#" class="view-all">View All Kava →</a>
+    </div>
+
+    <div class="kava-feature">
+      <div class="lifestyle-card">
+        <img class="lifestyle-bg" src="/images/kava-lifestyle.jpg" alt="Tropical Pacific scene">
+        <span style="opacity:0.9; letter-spacing:0.18em; text-transform:uppercase; font-size:11px; display: block; margin-bottom: 8px;">Pacific Calm</span>
+        <h3>Traditionally prepared,<br>naturally calming.</h3>
+        <p>Sourced from premium Pacific cultivars. Each 55g pouch is sealed for freshness and crafted to honor traditional kava preparation.</p>
+        <a href="#" class="btn btn-primary" style="align-self: flex-start;">Shop Luau Kava →</a>
+      </div>
+      <div class="card kava" style="min-height: 380px;">
+        <div class="img-wrap" style="aspect-ratio: auto; flex: 1; background: linear-gradient(135deg, #E8D4B8, #B89066);">
+          <span class="badge terracotta">Featured</span>
+          <img class="product-illust" src="/images/kava-product.jpg" alt="Premium kava pouch">
+          <div class="strain-ribbon" style="background: rgba(122, 87, 61, 0.9);">
+            <span class="vein-dot" style="background: var(--terracotta); box-shadow: 0 0 0 2px rgba(208,139,107,0.3);"></span>
+            Traditional Pacific
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">Luau Kava Co</div>
+          <div class="card-name">Premium Kava — 55g</div>
+          <div class="card-sizes">Traditional Pacific blend, sealed for freshness</div>
+          <div class="card-desc">
+            <span class="desc-short">Authentic Pacific kava in a sealed 55g pouch — traditional, smooth, and quietly calming in character.</span>
+            <span class="desc-full">Sourced from premium noble Pacific cultivars and ground for traditional preparation in a cloth strainer. Long enjoyed across Polynesia and Melanesia at the end of the day for its calm, social character. Earthy and woody aroma with a soft, peppery finish.</span>
+            <button type="button" class="desc-toggle" aria-expanded="false">Read more <span class="chev">▾</span></button>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">$19.99</div>
+            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tea Coming Soon -->
+    <div id="tea" class="section-head">
+      <div class="heading-text">
+        <h2>Tea — Coming Soon</h2>
+        <div class="sub">A curated tea collection is in the works. Drop your email to be the first to know.</div>
+      </div>
+    </div>
+
+    <div class="tea-banner">
+      <div class="tea-text">
+        <span class="tea-pill">Future Collection</span>
+        <h2>Curated teas,<br>handpicked & whole-leaf.</h2>
+        <p>We're working on a small line of botanical teas to complement our kratom and kava offerings. Join the early-access list.</p>
+        <div class="tea-form">
+          <input type="email" placeholder="your@email.com">
+          <button class="btn btn-primary" style="border-radius: 999px;">Notify Me</button>
+        </div>
+      </div>
+      <div class="tea-image">
+        <img class="photo" src="/images/tea-banner.jpg" alt="Curated herbal teas">
+      </div>
+    </div>
+
+    <!-- Wholesale -->
+    <div id="wholesale" class="wholesale-banner">
+      <div>
+        <h2>Wholesale Inquiries</h2>
+        <p>Carrying Mockingbird Kratom or Luau Kava in your shop? Reach out directly to get current pricing and order forms. Email or text — whichever is easier.</p>
+        <div class="wholesale-contact">
+          <a href="mailto:naturalgroundorganicswv@gmail.com" class="btn btn-primary">✉ Email Us</a>
+          <a href="#" class="btn btn-ghost">📱 Text for Pricing</a>
+        </div>
+      </div>
+      <div class="wholesale-future">
+        <span class="pill">Phase 2</span>
+        <h4>Wholesale Portal — Coming Soon</h4>
+        <p style="opacity: 0.88; margin: 0;">A dedicated B2B login is on the roadmap — net terms, reorder history, and live inventory. <a href="#" style="color: var(--terracotta); text-decoration: underline;">Join the waitlist.</a></p>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-mark">
+          <img src="/images/logo.jpg" alt="Natural Ground Organics logo">
+        </div>
+        <div class="logo-text">
+          <span class="brand" style="color: var(--sand-light);">Natural Ground Organics</span>
+          <span class="tagline" style="color: var(--gold-bright);">Rooted in Nature</span>
+        </div>
+      </div>
+      <p>Family-owned and operated from West Virginia. We bring you carefully sourced kratom and kava — naturally grown, lab tested, and packed with care.</p>
+      <p style="margin-top: -8px;"><strong style="color: var(--terracotta);">Serena & Jeremiah Watts</strong><br>
+      <a href="mailto:naturalgroundorganicswv@gmail.com" style="opacity: 1; color: var(--sand);">naturalgroundorganicswv@gmail.com</a></p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4a4 4 0 1 1-8 .6 4 4 0 0 1 8-.6z"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 7.5v3a7 7 0 0 1-4-1.3v6.3a5.5 5.5 0 1 1-5.5-5.5v3a2.5 2.5 0 1 0 2.5 2.5V2h3a4 4 0 0 0 4 4z"/></svg></a>
+      </div>
+    </div>
+
+    <div>
+      <h5>Shop</h5>
+      <ul>
+        <li><a href="#kratom">All Mockingbird Kratom</a></li>
+        <li><a href="#">White Strains</a></li>
+        <li><a href="#">Red Strains</a></li>
+        <li><a href="#">Green Strains</a></li>
+        <li><a href="#kava">Luau Kava Co</a></li>
+        <li><a href="#tea">Tea (Coming Soon)</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>By Size</h5>
+      <ul>
+        <li><a href="#">100g — Starter</a></li>
+        <li><a href="#">300g — Standard</a></li>
+        <li><a href="#">500g — Half Kilo</a></li>
+        <li><a href="#">1kg — Full Kilo</a></li>
+        <li><a href="#">Bundles & Samplers</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Customer Care</h5>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Lab Reports / COAs</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Business</h5>
+      <ul>
+        <li><a href="#wholesale">Wholesale</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <strong>WARNING:</strong> Products on this site are not intended for sale to minors. You must be <strong>21 years of age or older</strong> to purchase. These products have not been evaluated by the FDA and are not intended to diagnose, treat, cure, or prevent any disease. Persons with health conditions, those who are pregnant or nursing, or those taking medications should consult a physician before use. Kratom is not legal in all U.S. states — please check your local laws. Keep out of reach of children and pets.
+  </div>
+
+  <div class="footer-copy">
+    © 2026 Natural Ground Organics LLC · West Virginia, USA · All rights reserved · Custom botanical illustrations — replace with real product photography when ready
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.product-tabs button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.product-tabs button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  document.querySelectorAll('.add-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const badge = document.querySelector('.cart-badge');
+      badge.textContent = parseInt(badge.textContent) + 1;
+      btn.style.transform = 'scale(1.2) rotate(180deg)';
+      setTimeout(() => btn.style.transform = '', 300);
+    });
+  });
+  // Read more / Read less toggle for product descriptions
+  document.querySelectorAll('.card-desc .desc-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const wrap = btn.closest('.card-desc');
+      const open = wrap.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.firstChild.nodeValue = open ? 'Read less ' : 'Read more ';
+    });
+  });
+</script>
+
+</body>
+</html>
